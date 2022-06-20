@@ -15,184 +15,188 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Container(
-          width: width,
-          margin: EdgeInsets.symmetric(vertical: 10),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5),
-              color: Colors.white,
-              boxShadow: boxShadow
-          ),
-          child: Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: boxShadow
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(3),
-                              image: const DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage("assets/img_product.png")
-                              )
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        alignment: Alignment.center,
+        child: Center(
+          child: Container(
+            width: width,
+            margin: EdgeInsets.symmetric(vertical: 10),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+                boxShadow: boxShadow
+            ),
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: boxShadow
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(3),
+                                image: const DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage("assets/img_product.png")
+                                )
+                            ),
                           ),
-                        ),
-                        SizedBox(width: 15),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: width - 50 - 15 - 30,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Nike Sneaker Red Ruby Pro",
-                                style: blackFontStyle.copyWith(fontSize:13, fontWeight: FontWeight.w700),
-                                textAlign: TextAlign.start,
+                          SizedBox(width: 15),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: width - 50 - 15 - 30,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "Nike Sneaker Red Ruby Pro",
+                                  style: blackFontStyle.copyWith(fontSize:13, fontWeight: FontWeight.w700),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 3),
-                            Container(
-                              width: width - 50 - 15 - 30,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "1 Pcs",
-                                style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w400),
-                                textAlign: TextAlign.start,
+                              SizedBox(height: 3),
+                              Container(
+                                width: width - 50 - 15 - 30,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "1 Pcs",
+                                  style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w400),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              Container(
-                padding: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade50,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: width/2 - 60,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "ID transaction",
-                                style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
-                                textAlign: TextAlign.start,
+                Container(
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.grey.shade50,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: width/2 - 60,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "ID transaction",
+                                  style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Container(
-                              width: width/2 - 60,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "INV213214845423",
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w700),
-                                textAlign: TextAlign.start,
+                              SizedBox(height: 5),
+                              Container(
+                                width: width/2 - 60,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "INV213214845423",
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w700),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Container(
-                              width: width/2 - 20,
-                              alignment: Alignment.centerRight,
-                              child: Text(
-                                "Date Transaction",
-                                style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
-                                textAlign: TextAlign.end,
+                            ],
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Container(
+                                width: width/2 - 20,
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "Date Transaction",
+                                  style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
+                                  textAlign: TextAlign.end,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Container(
-                              width: width/2 - 20,
-                              alignment: Alignment.centerRight,
-                              child: Text(
-                                "14:55 | 18 June 2022",
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w700),
-                                textAlign: TextAlign.end,
+                              SizedBox(height: 5),
+                              Container(
+                                width: width/2 - 20,
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "14:55 | 18 June 2022",
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: blackFontStyle.copyWith(fontSize:12, fontWeight: FontWeight.w700),
+                                  textAlign: TextAlign.end,
+                                ),
                               ),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: width/2 - 40,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Total Belanja:",
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
-                                textAlign: TextAlign.start,
+                            ],
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: width/2 - 40,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "Total Belanja:",
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: greyFontStyle.copyWith(fontSize:11, fontWeight: FontWeight.w400),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 2),
-                            Container(
-                              width: width/2 - 40,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                NumberFormat.currency(
-                                  locale: 'id_ID',
-                                  decimalDigits: 0,
-                                  symbol: 'Rp',
-                                ).format(1450000),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: blackFontStyle.copyWith(color: Colors.red, fontSize:13, fontWeight: FontWeight.w700),
-                                textAlign: TextAlign.start,
+                              SizedBox(height: 2),
+                              Container(
+                                width: width/2 - 40,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  NumberFormat.currency(
+                                    locale: 'id_ID',
+                                    decimalDigits: 0,
+                                    symbol: 'Rp',
+                                  ).format(1450000),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: blackFontStyle.copyWith(color: Colors.red, fontSize:13, fontWeight: FontWeight.w700),
+                                  textAlign: TextAlign.start,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        (state == "UNPAID")
-                            ? ButtonCard("Lakukan pembayaran", 165, Colors.red, isActive: true, padding: 6, isBold: false, fontSize: 11, radius: 30, backColor: Colors.grey.shade50, isReadable: false,)
-                            : ButtonCard(state, 165, Colors.green, isActive: true, padding: 8, isBold: false, fontSize: 11, radius: 30, backColor: Colors.grey.shade50, isReadable: false,)
-                      ],
-                    ),
+                            ],
+                          ),
+                          (state == "UNPAID")
+                              ? ButtonCard("Lakukan pembayaran", 165, Colors.red, isActive: true, padding: 6, isBold: false, fontSize: 11, radius: 30, backColor: Colors.grey.shade50, isReadable: false,)
+                              : ButtonCard(state, 165, Colors.green, isActive: true, padding: 8, isBold: false, fontSize: 11, radius: 30, backColor: Colors.grey.shade50, isReadable: false,)
+                        ],
+                      ),
 
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        )
+              ],
+            ),
+          )
+        ),
       ),
     );
   }
